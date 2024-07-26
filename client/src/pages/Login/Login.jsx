@@ -64,7 +64,7 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center mt-28">
-      <div className="w-96 border rounded bg-white px-7 py-10">
+      <div className="py-10 bg-white border rounded w-96 px-7">
         <form onSubmit={handleLogin}>
           <h4 className="text-2xl mb-7">Login</h4>
 
@@ -81,13 +81,13 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          {error && <p className="text-red-500 text-sm pb-1">{error}</p>}
+          {error && <p className="pb-1 text-sm text-red-500">{error}</p>}
 
           <button type="submit" className="btn-primary">
             LOGIN
           </button>
 
-          <p className="text-sm text-center mt-4">
+          <p className="mt-4 text-sm text-center">
             Not registered yet?{" "}
             <Link
               to={"/signup"}

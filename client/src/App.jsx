@@ -1,10 +1,12 @@
-import React, { useState } from "react"
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
-import Home from "./pages/Home/Home"
-import Login from "./pages/Login/Login"
-import Signup from "./pages/Signup/Signup"
-import { ToastContainer } from "react-toastify"
-import "react-toastify/dist/ReactToastify.css"
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -16,7 +18,7 @@ const App = () => {
       </Routes>
       <ToastContainer position="top-center" />
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
