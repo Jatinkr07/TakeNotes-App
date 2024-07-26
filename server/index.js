@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-  cors({ origin: ["http://take-notes-app-65av.vercel.app"], credentials: true })
+  cors({ origin: ["https://take-notes-io.netlify.app/"], credentials: true })
 );
 
 app.listen(3000, () => {
