@@ -42,7 +42,7 @@ const Login = () => {
       dispatch(signInStart());
 
       const res = await axios.post(
-        "http://localhost:3000/api/auth/signin",
+        "http://take-note-api-delta.vercel.appapi/auth/signin",
         { email, password },
         { withCredentials: true }
       );

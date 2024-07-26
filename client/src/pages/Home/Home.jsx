@@ -71,7 +71,7 @@ const Home = () => {
 
     try {
       const res = await axios.delete(
-        "http://localhost:3000/api/note/delete/" + noteId,
+        "http:take-note-api-delta.vercel.app/api/note/delete/" + noteId,
         { withCredentials: true }
       );
 
@@ -89,10 +89,13 @@ const Home = () => {
 
   const onSearchNote = async (query) => {
     try {
-      const res = await axios.get("http://localhost:3000/api/note/search", {
-        params: { query },
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        "http://take-note-api-delta.vercel.app/api/note/search",
+        {
+          params: { query },
+          withCredentials: true,
+        }
+      );
 
       if (res.data.success === false) {
         console.log(res.data.message);
@@ -117,7 +120,8 @@ const Home = () => {
 
     try {
       const res = await axios.put(
-        "http://localhost:3000/api/note/update-note-pinned/" + noteId,
+        "http:take-note-api-delta.vercel.app/api/note/update-note-pinned/" +
+          noteId,
         { isPinned: !noteData.isPinned },
         { withCredentials: true }
       );
