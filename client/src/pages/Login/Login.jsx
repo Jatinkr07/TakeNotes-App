@@ -42,7 +42,7 @@ const Login = () => {
       dispatch(signInStart());
 
       const res = await axios.post(
-        "https://take-note-api-delta.vercel.app/api/auth/signin",
+        "https://main--backend-apiv1.netlify.app/api/auth/signin",
         { email, password },
         { withCredentials: true }
       );

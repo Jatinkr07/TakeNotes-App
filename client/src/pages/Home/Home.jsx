@@ -45,7 +45,7 @@ const Home = () => {
   const getAllNotes = async () => {
     try {
       const res = await axios.get(
-        "https://take-note-api-delta.vercel.app/api/note/all",
+        "https://main--backend-apiv1.netlify.app/api/note/all",
         {
           withCredentials: true,
         }
@@ -74,7 +74,7 @@ const Home = () => {
 
     try {
       const res = await axios.delete(
-        "https://take-note-api-delta.vercel.app/api/note/delete/" + noteId,
+        "https://main--backend-apiv1.netlify.app/api/note/delete/" + noteId,
         { withCredentials: true }
       );
 
@@ -93,7 +93,7 @@ const Home = () => {
   const onSearchNote = async (query) => {
     try {
       const res = await axios.get(
-        "https://take-note-api-delta.vercel.app/api/note/search",
+        "https://main--backend-apiv1.netlify.app/api/note/search",
         {
           params: { query },
           withCredentials: true,
@@ -123,7 +123,7 @@ const Home = () => {
 
     try {
       const res = await axios.put(
-        "https://take-note-api-delta.vercel.app/api/note/update-note-pinned/" +
+        "https://main--backend-apiv1.netlify.app/api/note/update-note-pinned/" +
           noteId,
         { isPinned: !noteData.isPinned },
         { withCredentials: true }

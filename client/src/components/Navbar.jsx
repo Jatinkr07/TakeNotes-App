@@ -35,7 +35,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
       dispatch(signoutStart());
 
       const res = await axios.get(
-        "https://take-note-api-delta.vercel.app/api/auth/signout",
+        "https://main--backend-apiv1.netlify.app/api/auth/signout",
         {
           withCredentials: true,
         }
