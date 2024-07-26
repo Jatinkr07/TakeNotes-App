@@ -37,7 +37,7 @@ const Signup = () => {
     // sign up api
     try {
       const res = await axios.post(
-        "http://take-note-api-delta.vercel.app/api/auth/signup",
+        "https://take-note-api-delta.vercel.app/api/auth/signup",
         { username: name, email, password },
         { withCredentials: true }
       );

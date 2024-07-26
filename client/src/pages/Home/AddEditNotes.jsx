@@ -19,7 +19,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
 
     try {
       const res = await axios.post(
-        "http://take-note-api-delta.vercel.app/api/note/edit/" + noteId,
+        "https://take-note-api-delta.vercel.app/api/note/edit/" + noteId,
         { title, content, tags },
         { withCredentials: true }
       );
@@ -47,7 +47,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
   const addNewNote = async () => {
     try {
       const res = await axios.post(
-        "http://take-note-api-delta.vercel.app/api/note/add",
+        "https://take-note-api-delta.vercel.app/api/note/add",
         { title, content, tags },
         { withCredentials: true }
       );
