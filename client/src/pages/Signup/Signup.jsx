@@ -37,7 +37,7 @@ const Signup = () => {
     // sign up api
     try {
       const res = await axios.post(
-        "https://main--backend-apiv1.netlify.app/api/auth/signup",
+        "https://takenotes-app-12.onrender.com/api/auth/signup",
         { username: name, email, password },
         { withCredentials: true }
       );

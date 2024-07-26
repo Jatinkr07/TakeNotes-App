@@ -35,7 +35,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
       dispatch(signoutStart());
 
       const res = await axios.get(
-        "https://main--backend-apiv1.netlify.app/api/auth/signout",
+        "https://takenotes-app-12.onrender.com/api/auth/signout",
         {
           withCredentials: true,
         }
