@@ -35,7 +35,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
       dispatch(signoutStart());
 
       const res = await axios.get(
-        "https://takenotes-app-14.onrender.com/api/auth/signout",
+        "https://takenotes-app-15.onrender.com/api/auth/signout",
         {
           withCredentials: true,
         }
