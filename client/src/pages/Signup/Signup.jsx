@@ -37,7 +37,7 @@ const Signup = () => {
     // sign up api
     try {
       const res = await axios.post(
-        "https://takenotes-app-15.onrender.com/api/auth/signup",
+        "http:localhost:3000/api/auth/signup",
         { username: name, email, password },
         { withCredentials: true }
       );
