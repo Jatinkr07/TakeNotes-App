@@ -16,16 +16,15 @@ mongoose
   });
 
 const app = express();
+const PORT = process.env.PORT;
 
 // to make input as json
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({ origin: ["https://take-notes-io.netlify.app/"], credentials: true })
-);
+app.use(cors({ origin: ["http://localhost:5173"], credentials: true }));
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
 
 // import routes

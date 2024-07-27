@@ -42,7 +42,7 @@ const Login = () => {
       dispatch(signInStart());
 
       const res = await axios.post(
-        "https://takenotes-app-12.onrender.com/api/auth/signin",
+        "http://localhost:3000/api/auth/signin",
         { email, password },
         { withCredentials: true }
       );
